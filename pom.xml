@@ -19,16 +19,16 @@
 
     <modules>
         <module>ServiceManager</module>
-        <!--<module>KnowledgeService</module>-->
-        <!--<module>ResourceAccessService</module>-->
-        <!--<module>AuthenticateService</module>-->
-        <!--<module>LogonService</module>-->
-        <!--<module>PartyIdentifiedService</module>-->
-        <!--<module>SystemService</module>-->
-        <!--<module>CompositionService</module>-->
-        <!--<module>EhrService</module>-->
-        <!--<module>VEhrService</module>-->
-        <!--<module>vehr-integration-tests</module>-->
+        <module>KnowledgeService</module>
+        <module>ResourceAccessService</module>
+        <module>AuthenticateService</module>
+        <module>LogonService</module>
+        <module>PartyIdentifiedService</module>
+        <module>SystemService</module>
+        <module>CompositionService</module>
+        <module>EhrService</module>
+        <module>VEhrService</module>
+        <module>vehr-integration-tests</module>
     </modules>
 
     <build>
