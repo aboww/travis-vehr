@@ -4,6 +4,7 @@ cd ethercis-core
 
 echo 'installing third party jars to maven repository'
 
+chmod +x install_3rd_party_jars.sh
 ./install_3rd_party_jars.sh | tee install_jars.output
 
 if grep -Fq "FAIL" install_jars.output ; then
