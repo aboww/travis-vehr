@@ -3,6 +3,7 @@ language: java
 before_install:
   # required permissions and steps for core libraries
   - echo $HOME
+  - echo $TRAVIS_BUILD_DIR
   - chmod +x clone_core_repo.sh
   - chmod +x install_core.sh
   - chmod +x custom_build_core_no_site.sh
