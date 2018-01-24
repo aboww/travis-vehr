@@ -2,7 +2,8 @@ language: java
 
 before_install:
   # required permissions and steps for core libraries
-  - chmod +x install.sh
+  - chmod +x install_core.sh
+  - chmod +x custom_build_core_no_site.sh
   - chmod +x custom_build.sh
   - chmod +x install_3rd_party_jars.sh
   - chmod +x push_reports.sh
