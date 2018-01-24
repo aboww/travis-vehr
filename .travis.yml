@@ -14,6 +14,9 @@ before_install:
   - ./clone_core_repo.sh
   - ./install_core.sh
   - ./custom_build_core_no_site.sh
+  - echo REPLACING PATHS IN SERVICE.INI FILES
+  - echo $TRAVIS_BUILD_DIR
+  - sed -i 's^${user.dir}/../file_repo^'$TRAVIS_BUILD_DIR'/file_repo^g' $(find ./ -iname 'services.properties')
 
 install:
   - echo OVERRIDING INSTALL
