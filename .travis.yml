@@ -5,7 +5,6 @@ before_install:
   - echo $HOME
   - cat $TRAVIS_BUILD_DIR/ResourceAccessService/src/test/resources/services.properties
   - sed -i 's^${user.dir}/../file_repo^'$TRAVIS_BUILD_DIR'/file_repo^g' $(find ./ -iname 'services.properties')
-  rchetype=/home/travis/build/aboww/travis-vehr/file_repo/knowledge/archetypes
   - cat $TRAVIS_BUILD_DIR/ResourceAccessService/src/test/resources/services.properties
   - echo $TRAVIS_BUILD_DIR
   - chmod +x clone_core_repo.sh
