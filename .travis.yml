@@ -3,6 +3,9 @@ language: java
 before_install:
   # required permissions and steps for core libraries
   - echo $HOME
+  - cat $TRAVIS_BUILD_DIR/ResourceAccessService/src/test/services.properties
+  - sed -i 's^${user.dir}/../file_repo^'$TRAVIS_BUILD_DIR'/file_repo^g' $(find ./ -iname 'services.properties')
+  - cat $TRAVIS_BUILD_DIR/ResourceAccessService/src/test/services.properties
   - echo $TRAVIS_BUILD_DIR
   - chmod +x clone_core_repo.sh
   - chmod +x install_core.sh
