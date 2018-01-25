@@ -3,7 +3,7 @@ package com.ethercis.servicemanager.common;
 
 import junit.framework.TestCase;
 
-public class ThreadListerDontTestClass extends TestCase {
+public class ThreadListerTest extends TestCase {
 
     /**
      * java org.xmlBlaster.common.ThreadLister
